@@ -17,6 +17,16 @@
     include "Modules/menu.php";
     include "Modules/footer.php";
 
+    #rutas
+
+    if  (isset($_GET ["ruta"])) {
+    
+        if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "productos") {
+            include "Modules/" . $_GET["ruta"] . ".php";
+            }
+        
+    }
+
     ?>
     
 </body>
