@@ -12,20 +12,20 @@
 
     <?php
 
-    include "Modules/header.php";
-    include "Modules/login.php";
-    include "Modules/menu.php";
-    include "Modules/footer.php";
+        include "Modules/header.php";
+        include "Modules/login.php";
+        include "Modules/menu.php";
+        include "Modules/footer.php";
 
-    #rutas
+        #rutas
 
-    if  (isset($_GET ["ruta"])) {
-    
-        if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "productos") {
-            include "Modules/" . $_GET["ruta"] . ".php";
-            }
+        if  (isset($_GET ["ruta"])) {
         
-    }
+            if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "productos") {
+                include "Modules/" . $_GET["ruta"] . ".php";
+                }
+            
+        }
 
     ?>
     
