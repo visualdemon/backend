@@ -221,7 +221,7 @@ div.cs-select:focus {
 
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
-	speak: none;
+	speak-as: none;
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
