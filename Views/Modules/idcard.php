@@ -1,0 +1,1 @@
+<h1>Genera tu carnet virtual</h1>

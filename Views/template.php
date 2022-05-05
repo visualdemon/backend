@@ -38,14 +38,14 @@
 
             if  (isset($_GET ["ruta"])) {
             
-                if ($_GET["ruta"] == "inicio" || $_GET["ruta"] == "perfil" || $_GET["ruta"] == "productos") {
+                if ($_GET["ruta"] == "home" || $_GET["ruta"] == "profile" || $_GET["ruta"] == "products" || $_GET["ruta"] == "idcard") {
                     include "Modules/" . $_GET["ruta"] . ".php";
                     }
                 
             }
             
             include "Modules/footer.php";
-
+            
         echo '</div>';
 
 
