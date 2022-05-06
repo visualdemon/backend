@@ -3,7 +3,7 @@
     <div class="top-left">
         <div class="navbar-header">
             <a class="navbar-brand" href="./"><img src="Views/img/LOGO-ID-COMFA.png" alt="Logo"></a>
-            <a class="navbar-brand hidden" href="./"><img src="Views/img/avatar.png" alt="Logo"></a>
+            <a class="navbar-brand hidden" href="./"><img src="Views/img/LOGO-ID-COMFA.png" alt="Logo"></a>
             <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
         </div>
     </div>

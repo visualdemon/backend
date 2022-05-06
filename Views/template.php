@@ -28,26 +28,35 @@
 
     <?php
 
-        include "Modules/menu.php";
+        if (isset($_SESSION["validateSesionBackend"]) && $_SESSION["validateSesionBackend"] === "ok") {
 
-        echo '<div id="right-panel" class="right-panel">';
+            include "Modules/menu.php";
 
-            include "Modules/header.php";
-            
-            #rutas
+            echo '<div id="right-panel" class="right-panel">';
 
-            if  (isset($_GET ["ruta"])) {
-            
-                if ($_GET["ruta"] == "home" || $_GET["ruta"] == "profile" || $_GET["ruta"] == "products" || $_GET["ruta"] == "idcard") {
-                    include "Modules/" . $_GET["ruta"] . ".php";
-                    }
+                include "Modules/header.php";
                 
-            }
-            
-            include "Modules/footer.php";
-            
-        echo '</div>';
+                #rutas
 
+                if  (isset($_GET ["ruta"])) {
+                
+                    if ($_GET["ruta"] == "home" || $_GET["ruta"] == "profile" || $_GET["ruta"] == "products" || $_GET["ruta"] == "idcard") {
+                        include "Modules/" . $_GET["ruta"] . ".php";
+                        }
+                    
+                }
+                
+                include "Modules/footer.php";
+
+                
+                echo '</div>';
+                
+                
+        } else {
+                
+                include "Modules/login.php";
+                
+        }
 
     ?>
 
